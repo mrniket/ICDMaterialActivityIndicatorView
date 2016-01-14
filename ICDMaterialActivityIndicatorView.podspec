@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/iCodesign"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "iCodesign" => "leimagnet@gmail.com" }
-  s.platform     = :ios, "6.0"
+  s.ios.deployment_target = '6.0'
+  s.tvos.deployment_target = '9.0'
   s.source       = { :git => "https://github.com/iCodesign/ICDMaterialActivityIndicatorView.git", :tag => s.version.to_s }
   s.source_files = "Classes", "Classes/**/*.{h,m}"
   s.requires_arc = true
